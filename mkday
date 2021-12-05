@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir $1
+cd $1
+go mod init $1
+
+cp ../template/main.go main.go
+cp ../template/Makefile Makefile
